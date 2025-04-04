@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shining Stars Academy - Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shining Stars Academy</h1>
+        <h2>Admission Form</h2>
+
+        <form id="admissionForm">
+            <div id="studentDetails">
+                <h3>Student Details</h3>
+                <label for="studentName">Full Name:</label>
+                <input type="text" id="studentName" name="studentName" required><br><br>
+
+                <label for="studentDOB">Date of Birth:</label>
+                <input type="date" id="studentDOB" name="studentDOB" required><br><br>
+
+                <label for="studentGender">Gender:</label>
+                <select id="studentGender" name="studentGender" required>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+            </div>
+
+            <div id="parentDetails">
+                <h3>Parent Details</h3>
+                <label for="fatherName">Father's Name:</label>
+                <input type="text" id="fatherName" name="fatherName" required><br><br>
+
+                <label for="motherName">Mother's Name:</label>
+                <input type="text" id="motherName" name="motherName" required><br><br>
+
+                <label for="parentEmail">Parent's Email:</label>
+                <input type="email" id="parentEmail" name="parentEmail" required><br><br>
+
+                <label for="parentPhone">Parent's Phone Number:</label>
+                <input type="tel" id="parentPhone" name="parentPhone" required><br><br>
+            </div>
+
+            <div id="addressDetails">
+                <h3>Address Details</h3>
+                <label for="addressLine1">Address Line 1:</label>
+                <input type="text" id="addressLine1" name="addressLine1" required><br><br>
+
+                <label for="addressLine2">Address Line 2 (Optional):</label>
+                <input type="text" id="addressLine2" name="addressLine2"><br><br>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required><br><br>
+
+                <label for="state">State/Province:</label>
+                <input type="text" id="state" name="state" required><br><br>
+
+                <label for="postalCode">Postal Code:</label>
+                <input type="text" id="postalCode" name="postalCode" required><br><br>
+            </div>
+
+            <div id="reviewDetails">
+                <h3>Review Your Details</h3>
+                <div id="reviewContent">
+                    </div>
+            </div>
+
+            <button type="button" onclick="showReview()">Review and Submit</button>
+            <button type="submit" style="display:none;">Submit Application</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
